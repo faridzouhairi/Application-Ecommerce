@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20230315 15:02:21.955" rpa="false" schemaversion="3">
+<suite id="s1" name="CasTestException" source="c:\Users\zouha\Desktop\ProjetAutomatisation2Ecommerce\Tests\CasTestException.robot">
+<test id="s1-t1" name="Cas de test Exception" line="15">
+<kw name="Pre_conditions" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 15:02:22.248" level="INFO">Opening browser 'chrome' to base url 'http://tutorialsninja.com/demo/index.php?route=common/home'.</msg>
+<status status="PASS" starttime="20230315 15:02:22.247" endtime="20230315 15:02:25.908"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230315 15:02:25.908" endtime="20230315 15:02:26.086"/>
+</kw>
+<status status="PASS" starttime="20230315 15:02:22.246" endtime="20230315 15:02:26.087"/>
+</kw>
+<kw name="L'utilisateur ne peut pas enregistrer un compte en double">
+<arg>salim</arg>
+<arg>hamid</arg>
+<arg>salim.hamido@test.com</arg>
+<arg>1234567890</arg>
+<arg>Test@123</arg>
+<arg>Test@123</arg>
+<doc>L'utilisateur ne peut pas enregistrer un compte en double.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn_myaccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:26.090" level="INFO">Clicking element '//span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20230315 15:02:26.089" endtime="20230315 15:02:26.195"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Btn_myaccount}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230315 15:02:26.195" endtime="20230315 15:02:26.227"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn_enregistrer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:26.229" level="INFO">Clicking element '//a[text()='Register']'.</msg>
+<status status="PASS" starttime="20230315 15:02:26.228" endtime="20230315 15:02:27.792"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Firstname}</arg>
+<arg>${Firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:27.794" level="INFO">Typing text 'salim' into text field '//input[@id='input-firstname']'.</msg>
+<status status="PASS" starttime="20230315 15:02:27.793" endtime="20230315 15:02:27.913"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Lastname}</arg>
+<arg>${Lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:27.915" level="INFO">Typing text 'hamid' into text field '//input[@id='input-lastname']'.</msg>
+<status status="PASS" starttime="20230315 15:02:27.914" endtime="20230315 15:02:28.004"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.005" level="INFO">Typing text 'salim.hamido@test.com' into text field '//input[@id='input-email']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.004" endtime="20230315 15:02:28.138"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Telephone}</arg>
+<arg>${Telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.139" level="INFO">Typing text '1234567890' into text field '//input[@id='input-telephone']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.139" endtime="20230315 15:02:28.222"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.223" level="INFO">Typing text 'Test@123' into text field '//input[@id='input-password']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.222" endtime="20230315 15:02:28.338"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_confirm_password}</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.339" level="INFO">Typing text 'Test@123' into text field '//input[@id='input-confirm']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.338" endtime="20230315 15:02:28.440"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_agree}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.441" level="INFO">Clicking element '//input[@name='agree']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.441" endtime="20230315 15:02:28.496"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230315 15:02:28.497" level="INFO">Clicking element '//input[@value='Continue']'.</msg>
+<status status="PASS" starttime="20230315 15:02:28.496" endtime="20230315 15:02:29.027"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Warning: E-Mail Address is already registered!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230315 15:02:29.062" level="INFO">Current page contains text 'Warning: E-Mail Address is already registered!'.</msg>
+<status status="PASS" starttime="20230315 15:02:29.027" endtime="20230315 15:02:29.065"/>
+</kw>
+<status status="PASS" starttime="20230315 15:02:26.088" endtime="20230315 15:02:29.067"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230315 15:02:29.071" endtime="20230315 15:02:31.252"/>
+</kw>
+<status status="PASS" starttime="20230315 15:02:22.245" endtime="20230315 15:02:31.252"/>
+</test>
+<status status="PASS" starttime="20230315 15:02:21.963" endtime="20230315 15:02:31.252"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CasTestException">CasTestException</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

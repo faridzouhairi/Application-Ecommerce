@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20230315 17:25:51.426" rpa="false" schemaversion="3">
+<suite id="s1" name="ProjetAutomatisation2Ecommerce" source="C:\Users\zouha\Desktop\ProjetAutomatisation2Ecommerce">
+<suite id="s1-s1" name="Tests" source="C:\Users\zouha\Desktop\ProjetAutomatisation2Ecommerce\Tests">
+<suite id="s1-s1-s1" name="CasTestRechercherProduitException" source="C:\Users\zouha\Desktop\ProjetAutomatisation2Ecommerce\Tests\CasTestRechercherProduitException.robot">
+<test id="s1-s1-s1-t1" name="Cas de test Exception" line="15">
+<kw name="Pre_conditions" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230315 17:25:51.716" level="INFO">Opening browser 'chrome' to base url 'http://tutorialsninja.com/demo/index.php?route=common/home'.</msg>
+<status status="PASS" starttime="20230315 17:25:51.714" endtime="20230315 17:25:55.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230315 17:25:55.315" endtime="20230315 17:25:55.437"/>
+</kw>
+<status status="PASS" starttime="20230315 17:25:51.713" endtime="20230315 17:25:55.437"/>
+</kw>
+<kw name="Rechercher un produit qui n'existe pas">
+<arg>tortue ninja</arg>
+<doc>l'utilisateur est en mesure de rechercher des produits</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_box}</arg>
+<arg>${vSearch}</arg>
+<arg>ENTER</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230315 17:25:55.440" level="INFO">Typing text 'tortue ninja' into text field '//input[@name='search']'.</msg>
+<status status="PASS" starttime="20230315 17:25:55.438" endtime="20230315 17:25:55.585"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230315 17:25:55.593" level="INFO">${title} = Your Store</msg>
+<status status="PASS" starttime="20230315 17:25:55.585" endtime="20230315 17:25:55.594"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230315 17:25:55.594" endtime="20230315 17:25:55.595"/>
+</kw>
+<status status="PASS" starttime="20230315 17:25:55.438" endtime="20230315 17:25:55.596"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230315 17:25:55.597" endtime="20230315 17:25:57.865"/>
+</kw>
+<status status="PASS" starttime="20230315 17:25:51.711" endtime="20230315 17:25:57.867"/>
+</test>
+<status status="PASS" starttime="20230315 17:25:51.481" endtime="20230315 17:25:57.872"/>
+</suite>
+<status status="PASS" starttime="20230315 17:25:51.477" endtime="20230315 17:25:57.875"/>
+</suite>
+<status status="PASS" starttime="20230315 17:25:51.438" endtime="20230315 17:25:57.877"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ProjetAutomatisation2Ecommerce">ProjetAutomatisation2Ecommerce</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">ProjetAutomatisation2Ecommerce.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="CasTestRechercherProduitException">ProjetAutomatisation2Ecommerce.Tests.CasTestRechercherProduitException</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
