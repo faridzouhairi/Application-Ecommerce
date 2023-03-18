@@ -20,7 +20,8 @@ Pre_conditions
 Rechercher un produit qui n'existe pas 
     [Documentation]   l'utilisateur est en mesure de rechercher des produits
     [Arguments]     ${vSearch}     
-    Input Text   ${search_box}   ${vSearch}    ENTER
-    ${title}=       Get Title
-    Log To Console             ${title}
-    #Page Should Contain   There is no product that matches the search criteria.
+    Input Text   ${search_box}   ${vSearch}    
+    Click Button    ${btn_search}
+    ${texte}=       Get Text    ${element_text_recherche}
+    Log To Console             ${texte}
+    Page Should Contain   There is no product that matches the search criteria.

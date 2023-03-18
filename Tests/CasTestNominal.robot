@@ -12,8 +12,8 @@ ${BROWSER}    chrome
 
 
 *** Test Cases ***    Firstname   Lastname    Email    Telephone     Password    confirm_password
-Cas de test Nominal     salim    hamid    salim.hamid123@test.com    1234567890    Test@123    Test@123
-Cas de test Nominal2    salim    hamid    salim.hamid1234@test.com    1234567890    Test@123    Test@123
+Cas de test Nominal     salim    hamid    salim.h1@test.com    1234567890    Test@123    Test@123
+Cas de test Nominal2    salim    hamid    salim1.h2@test.com    1234567890    Test@123    Test@123
 *** Keywords ***
 Pre_conditions
     Open Browser   ${URL}   ${BROWSER}
